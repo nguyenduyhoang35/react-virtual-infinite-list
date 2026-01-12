@@ -1,0 +1,280 @@
+.example {
+  padding: 20px;
+}
+
+.example-header {
+  margin-bottom: 20px;
+}
+
+.example-header h2 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.example-header p {
+  margin: 0 0 16px 0;
+  color: #666;
+}
+
+.example-header code {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.jump-control {
+  display: flex;
+  gap: 8px;
+}
+
+.jump-control input {
+  width: 120px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.stats {
+  color: #888;
+  font-size: 14px;
+}
+
+/* List Container */
+.list-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fafafa;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.virtual-container {
+  max-height: none;
+  overflow: visible;
+}
+
+.items-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.virtual-items-container {
+  padding: 0;
+}
+
+.hook-items {
+  padding: 16px;
+}
+
+/* Item Card */
+.item-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.virtual-card {
+  margin: 0 16px;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+.cursor-card {
+  border-left: 4px solid #667eea;
+}
+
+.hook-card {
+  border-left: 4px solid #48bb78;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #f0f0f0;
+  flex-shrink: 0;
+}
+
+.avatar-small {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  flex-shrink: 0;
+}
+
+.item-index {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+  min-width: 40px;
+}
+
+.item-badge {
+  background: #48bb78;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 12px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-content h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.item-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.item-content p.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Loading & States */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  color: #666;
+  font-size: 14px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e0e0e0;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.end-message {
+  text-align: center;
+  padding: 24px;
+  color: #888;
+  font-size: 14px;
+  border-top: 1px dashed #e0e0e0;
+  margin-top: 16px;
+}
+
+.empty {
+  text-align: center;
+  padding: 48px;
+  color: #999;
+}
+
+.error {
+  text-align: center;
+  padding: 24px;
+  color: #e53e3e;
+}
+
+.error button {
+  margin-top: 12px;
+  background: #e53e3e;
+  color: white;
+}
+
+/* Grid Layout */
+.grid-container {
+  padding: 16px;
+}
+
+.grid-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.grid-avatar {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+
+.grid-content {
+  padding: 12px;
+}
+
+.grid-content h3 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.grid-content p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.grid-loader {
+  grid-column: 1 / -1;
+}
+
+/* Jump Error */
+.jump-error {
+  color: #e53e3e;
+  font-size: 13px;
+  margin-top: 8px;
+}

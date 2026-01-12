@@ -1,0 +1,32 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+
+# Example
+example/
+
+# Dev files
+.git/
+.gitignore
+.eslintrc*
+.prettierrc*
+*.log
+
+# Tests
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Build artifacts (keep dist/)
+node_modules/
