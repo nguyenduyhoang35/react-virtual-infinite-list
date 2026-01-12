@@ -1,6 +1,6 @@
 {
   "name": "react-virtual-infinite-list",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight infinite scroll with pagination (page/cursor), virtual list, grid layout and window scroll support for React",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
